@@ -98,7 +98,7 @@ img {
 
 #search {
     width: 0;
-    background-color: #2b303b;
+    background-color: #f73a4c;
     border-color: #2b303b;
     padding-top: 5px;
     box-sizing: border-box;
@@ -111,7 +111,37 @@ img {
 }
 
 #search:focus {
+    width: 200px;
+    color: #2b303b;
+    font-size: 16px;
+}
+
+#secondSearch {
+    display: none;
+}
+
+#secondSearch>label {
+    display: none;
+}
+
+#search2 {
+    width: 0;
+    background-color: #2b303b;
+    border-color: #2b303b;
+    padding-top: 5px;
+    box-sizing: border-box;
+    color: white;
+}
+
+#search2:hover {
+    width: 90%;
+    transition: width 1s ease;
+}
+
+#search2:focus {
     color: #f73a4c;
+    width: 90%;
+    font-size: 16px;
 }
 
 #navigationSectionTwo {
@@ -134,7 +164,29 @@ img {
     box-sizing: border-box;
     float: left;
     vertical-align: top;
-    padding: 21px 13px;
+    border: solid #f73a4c 2px;
+    padding: 15px 25px;
+    border-radius: 35px;
+}
+
+.secondLi>a {
+    padding: 15px 15px;
+}
+
+.secondLi:hover {
+    background-color: white;
+    font-weight: 300;
+    -webkit-transition: background-color 1s ease;
+    -moz-transition: background-color 1s ease;
+    transition: background-color 1s ease;
+}
+
+.secondLi>a:hover {
+    text-decoration: none;
+    color: black;
+    -webkit-transition: color 1s ease;
+    -moz-transition: color 1s ease;
+    transition: color 1s ease;
 }
 
 .secondLi>a {
@@ -183,7 +235,9 @@ img {
 
 #spongebob a:hover {
     background-color: #f73a4c;
-    transition: color 1s ease;
+    -webkit-transition: background-color 1s ease;
+    -moz-transition: background-color 1s ease;
+    transition: background-color 1s ease;
 }
 
 #movieGallery {
@@ -209,6 +263,23 @@ img {
 }
 
 @media all and (max-width:900px) {
+    #navigationSectionTwo {
+        margin-top: 170px;
+    }
+    #secondSearch {
+        display: inline-block;
+        width: 100%;
+    }
+    #secondSearch {
+        display: block;
+        float: left;
+        background-color: #f73a4c;
+    }
+    #secondSearch>label {
+        display: block;
+        float: left;
+        width: 10%;
+    }
     #firstNavigation {
         display: none;
     }
@@ -217,7 +288,10 @@ img {
         text-align: center;
         background-color: #2b303b;
         color: white;
-        font-weight: 300;
+    }
+    #mobile:hover {
+        background-color: #f73a4c;
+        font-size: 16px;
     }
     #mobileNav select {
         width: 100%;
