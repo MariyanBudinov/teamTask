@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MOVIES</title>
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="assets/movieSiteStyle.css" />
+</head>
+
+<body>
+    <div id="container">
+        <header>
+
+            <div id="blackPart">
+
+                <div id="brandSite">
+                    <a id="homePage" href="./movieSite.html">
+                        <h1>MOVIES</h1>
+                    </a>
+                </div>
+
+                <section id="navigationSection">
+                    <ul id="firstNavigation">
+                        <li class="firstLi"><a href="">HOME</a></li>
+                        <li class="firstLi"><a href="">ABOUT</a></li>
+                        <li class="firstLi"><a href="">MOST POPULAR</a></li>
+                        <li class="firstLi"><a href="">NEWS</a></li>
+                        <li class="firstLi"><a href="">CONTACTS</a></li>
+                        <li class="firstLi" id="searchContainer">
+                            <form action="search.php" method="GET" accept-charset="UTF-8">
+                                <label for="search">
+                                <img src="assets/images/search.png" />
+                            </label>
+                                <input id="search" type="search" name="search" placeholder="Find your movie.">
+                            </form>
+                        </li>
+                    </ul>
+                </section>
+                <section id="mobileNav">
+                    <select name="mobile" id="mobile">
+                        <option value="HOME"> <a href="">HOME</a> </option>
+                        <option value="ABOUT"> <a href="">ABOUT</a> </option>
+                        <option value="MOST POPULAR"> <a href="">MOST POPULAR</a> </option>
+                        <option value="NEWS"> <a href="">NEWS</a> </option>
+                        <option value="CONTACTS"> <a href="">CONTACTS</a> </option>
+                    </select>
+                </section>
+            </div>
+
+
+            <section id="navigationSectionTwo">
+                <ul id="secondNavigation">
+                    <li class="secondLi">
+                        <a href="">CINEMA MOVIES</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">TV SERIES</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">CARTOONS</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">ANIME</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">NEW MOVIES</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">HD MOVIES</a>
+                    </li>
+                </ul>
+            </section>
+        </header>
+
+
+        <main>
+            <section id="carousel">
+                <article id="spongebob">
+                    <h1>The SpongeBob Movie</h1>
+                    <p>«SpongeBob SquarePants takes leave from the town of Bikini Bottom in order to track down King Neptune's stolen crown.»</p>
+                    <a href="">LEARN MORE</a>
+                    <a href="https://www.youtube.com/watch?v=bNoBuZSX0Bg">
+                    WATCH TRAILER</a>
+                </article>
+
+                <article id="movieGallery">
+                    <div><img src="assets/images/spongebob-movie.jpg" alt="Sponge"></div>
+                    <div><img src="assets/images/exmachina-movie.jpg" alt=""></div>
+                    <div><img src="assets/images/madmax-movie.jpg" alt=""></div>
+                </article>
+
+            </section>
+        </main>
+
+
+    </div>
+</body>
+
+</html>
