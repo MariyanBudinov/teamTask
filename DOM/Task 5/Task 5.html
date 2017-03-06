@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CART</title>
+    <style>
+        #fillCart {
+            font-weight: bold;
+        }
+        
+        body {
+            background-color: deepskyblue;
+            width: 100%;
+            height: 1200px;
+            color: white;
+        }
+        
+        table {
+            border: 0;
+            text-align: center;
+            background-color: dimgray;
+        }
+        
+        table td,
+        table th {
+            border: 2px solid yellow;
+        }
+        
+        td>img {
+            width: 150px;
+            height: auto;
+        }
+        
+        p>a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        
+        button {
+            background-color: yellow;
+            color: deepskyblue;
+            font-weight: bold;
+            margin-left: 46.5%;
+        }
+        
+        .fillCart {
+            font-weight: bold;
+            font-size: 40px;
+            margin: 0% 0% 0% 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Main">
+
+        <h1 align="center"> Fresh Bio Vegetables </h1>
+        <hr>
+
+        <div align="center">
+            <p class="fillCart">0</p>
+            <a href="#" onclick="return show('Cart','Main');">
+                <img src="images/cart.png" height=150px width=auto> </img>
+            </a>
+        </div>
+
+        <table id="Items" align="center">
+
+            <tr id="Carrot">
+                <td><img src="images/Carrot.png" alt="Carrot"></td>
+                <td>Fresh Carrots</td>
+                <td>BGN/kg 2.50</td>
+                <td class="mahni"> <input type="image" src="images/cart.png" name="Cart" height="50px" width="auto" onclick="addtoCart('Carrot'),countProducts()"> </td>
+            </tr>
+
+            <tr id="Tomato">
+                <td><img src="images/Tomato.png" alt="Tomato"></td>
+                <td>Fresh Tomato</td>
+                <td>BGN/kg 3.99</td>
+                <td class="mahni"> <input type="image" src="images/cart.png" name="Cart" height="50px" width="auto" onclick="addtoCart('Tomato'),countProducts()"> </td>
+            </tr>
+
+            <tr id="Olives">
+                <td><img src="images/Olives.png" alt="Olives"></td>
+                <td>Delicious Olives</td>
+                <td>BGN/kg 30.99</td>
+                <td class="mahni"> <input type="image" src="images/cart.png" name="Cart" height="50px" width="auto" onclick="addtoCart('Olives'),countProducts()"> </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div id="Cart" style="display:none">
+
+        <h1 align="center">Online Shopping Cart</h1>
+        <p class="fillCart" align="center">0</p>
+
+        <table id="tablecart" align="center"></table>
+
+        <p align="center"> <a href="#" onclick="return show('Main','Cart')">Home</a> </p>
+        <button onclick="emptyCart('tablecart')">Empty Cart</button>
+
+    </div>
+</body>
+<script src="Task 5.js"></script>
+
+</html>
