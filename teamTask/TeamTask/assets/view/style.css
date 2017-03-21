@@ -241,22 +241,18 @@
         border-bottom: outset 5px white;
     }
     
-    #newsSites {
+    .newsSites {
         display: inline-block;
     }
     
-    #newsSites>article {
+    .newsSites>article {
         box-sizing: border-box;
         float: left;
-        width: 31%;
+        width: 30%;
         height: auto;
         filter: drop-shadow(5px 5px 8px black);
-    }
-    
-    .partnerNews {
-        display: block;
-        margin-bottom: 10%;
-        margin-top: 10%;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
     
     .partnerNews>a>img {
@@ -273,7 +269,7 @@
     .partnerNews>a>figcaption {
         height: auto;
         text-align: center;
-        margin: 0% 20% 0% 27%;
+        margin: 0% 15% 0% 30%;
     }
     
     .partnerNews>a>figcaption>p {
