@@ -23,6 +23,11 @@
         height: auto;
     }
     
+    .advertising>a {
+        width: 100%;
+        height: auto;
+    }
+    
     #container {
         width: 70%;
         margin-left: 15%;
@@ -229,6 +234,121 @@
         -moz-transition: color 0.5s ease;
         transition: color 0.5s ease;
     }
+    /*//////////
+    CAROUSEL
+    //////////*/
+    
+    .storydiv {
+        height: 400px;
+        width: 100%;
+        position: relative;
+    }
+    
+    #image1 {
+        height: 400px;
+        width: 100%;
+    }
+    
+    #image2 {
+        height: 400px;
+        width: 100%;
+    }
+    
+    #image3 {
+        height: 400px;
+        width: 100%;
+    }
+    
+    #image4 {
+        height: 400px;
+        width: 100%;
+    }
+    
+    #story2 {
+        display: none;
+    }
+    
+    #story3 {
+        display: none;
+    }
+    
+    #story4 {
+        display: none;
+    }
+    
+    .fStory {
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+        filter: drop-shadow(2px 2px 3px black);
+        position: absolute;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    
+    .fStory>p {
+        padding-bottom: 10px;
+    }
+    
+    .fStory>p:last-child {
+        font-size: 13px;
+        color: dodgerblue;
+    }
+    
+    #nav {
+        font-size: 18px;
+        position: absolute;
+        top: 500px;
+        left: 45%;
+    }
+    
+    #nav>a {
+        text-decoration: none;
+        color: dodgerblue;
+        font-weight: bold;
+        font-size: 13px;
+        text-align: center;
+        background: #1f2324;
+        padding-left: 3px;
+        padding-right: 3px;
+        border-radius: 50%;
+        border: 2px outset dodgerblue;
+        filter: drop-shadow(2px 2px 3px black);
+    }
+    
+    #nav>a:hover {
+        color: white;
+        transition: color 0.3s ease;
+        border: 2px outset white;
+        transition: border 0.3s ease;
+    }
+    
+    #nav>span a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 5px;
+    }
+    
+    #nav>span a:hover {
+        color: #1f2324;
+        transition: color 0.3s ease;
+    }
+    
+    .selStory {
+        background-color: dodgerblue;
+        border: 2px outset white;
+        border-radius: 50%;
+        filter: drop-shadow(2px 2px 3px black);
+    }
+    
+    .selStory:hover {
+        border: 2px outset #1f2324;
+        transition: border 0.3s ease;
+    }
     /*//////
     FOOTER
     //////*/
@@ -243,6 +363,7 @@
     
     .newsSites {
         display: inline-block;
+        width: 100%;
     }
     
     .newsSites>article {
@@ -251,8 +372,8 @@
         width: 30%;
         height: auto;
         filter: drop-shadow(5px 5px 8px black);
-        margin-bottom: 5%;
-        margin-top: 5%;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
     
     .partnerNews>a>img {
