@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NEWS BG</title>
+
+    <link rel="stylesheet" href="assets/view/reset.css" />
+    <link rel="stylesheet" href="assets/view/style.css" />
+</head>
+
+<body>
+    <!--///////////////////
+    ADVERTISING SECTION
+    //////////////////-->
+    <div class="advertising">
+        <a href="http://ittalents.bg/home" target="_blank">
+            <img src="assets/images/ITTALENTS.png" alt="Logo ITTALLENTS">
+        </a>
+    </div>
+
+    <div id="ImperiaOnline" class="advertising">
+        <a href="https://www135.imperiaonline.org/imperia/game_v6/game/frontpage.php?games=ok&ref=https%3A%2F%2Fwww.google.bg%2F&lang=bg" target="_blank">
+            <img src="assets/images/ImperiaOnline.png" alt="Logo Imperia Online">
+        </a>
+    </div>
+    <!--//////////
+    CONTACT US
+    //////////-->
+    <div id="contactUs">
+        <img id="ExitImage" src="assets/images/xImage.png" alt="Exit">
+        <p>Главни редактори:</p>
+        <p>Иво Христов</p>
+        <p>e-mail: ivohr2@abv.bg</p>
+        <p>Мариян Будинов</p>
+        <p>e-mail: mariqn_b@live.com</p>
+        <p>Адрес: бул. „България“, 1404 София</p>
+    </div>
+    <!--/////////
+    REGISTRATION
+    //////////-->
+    <div id="registrationForms">
+        <img id="ExitImageLogin" src="assets/images/xImage.png" alt="Exit">
+        <form id="loginForm">
+            <input type="text" placeholder="User Name:">
+            <input type="password" placeholder="Password:">
+            <button id="loginBut">Login</button>
+        </form>
+        <div id="registerForm">
+            <form id="registration">
+                <input type="text" placeholder="User Name:">
+                <input type="password" placeholder="Password:">
+                <input type="text" placeholder="Age:">
+                <button id="registerBut">Register</button>
+            </form>
+        </div>
+    </div>
+    <!--/////////////////////
+    DIV CONTAIN ALL PARTS
+    /////////////////////-->
+    <div id="container">
+        <header>
+            <!--//////////////////
+    BLACK NAVIGATION
+    //////////////////-->
+            <div id="blackPart">
+
+                <div id="brandSite">
+                    <a id="homePage" href="./News.bg.html" target="">
+                        <h1>news bg</h1>
+                    </a>
+                </div>
+
+                <section id="navigationSection">
+                    <ul id="firstNavigation">
+                        <li class="firstLi" id="searchContainer">
+                            <form action="search.php" method="GET" accept-charset="UTF-8">
+                                <label for="search">
+                                <img src="assets/images/search.png" />
+                            </label>
+                                <input id="search" type="search" name="search" placeholder="Търси...">
+                            </form>
+                        </li>
+                        <li id="LogIn" class="firstLi"><a href="" target="">Вход</a></li>
+                        <li id="Registration" class="firstLi"><a href="" target="">Регистрация</a></li>
+                        <li class="firstLi">
+                            <a href="http://www.bgonair.bg/tvonline?utm_source=dnes&utm_medium=TV&utm_campaign=stream" target="_blank"><img src="assets/images/logo.jpg" alt="OnAirBulgaria"></a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <!--//////////////////////
+    SECOND BLUE NAVIGATION
+    //////////////////////-->
+            <section id="navigationSectionTwo">
+                <ul id="secondNavigation">
+                    <li id="headList">
+                        <a href="">Начало</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">България</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">Бизнес</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">Крими</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">Свят</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">Здраве</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">Спорт</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">Технологии</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">Фото</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">Видео</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">Свободно време</a>
+                    </li>
+                    <li class="secondLi">
+                        <a href="">ТВ програма</a>
+                    </li>
+                </ul>
+            </section>
+            <!--//////////////////
+    MOBILE NAVIGATION
+    //////////////////-->
+            <section id="mobileNav">
+                <select name="mobile" id="mobile">
+                        <option value="Home"> <a href="">Начало</a> </option>
+                        <option value="Bulgaria"> <a href="">България</a> </option>
+                        <option value="Business"> <a href="">Бизнес</a> </option>
+                        <option value="Crime"> <a href="">Крими</a> </option>
+                        <option value="World"> <a href="">Свят</a> </option>
+                        <option value="Health"> <a href="">Здраве</a> </option>
+                        <option value="Sport"> <a href="">Спорт</a> </option>
+                        <option value="Technologies"> <a href="">Технологии</a> </option>
+                        <option value="Photo"> <a href="">Фото</a> </option>
+                        <option value="Video"> <a href="">Видео</a> </option>
+                        <option value="FreeTime"> <a href="">Свободно време</a> </option>
+                        <option value="TV"> <a href="">ТВ програма</a> </option>
+                    </select>
+            </section>
+        </header>
+        <!--/////////////
+    HOMEPAGE MAIN
+    /////////////-->
+        <main id="HomeMain">
+            <div id="storyContainer">
+                <div id="story1" class="storydiv">
+                    <a href="" id="StoryLink1" target="_blank">
+                        <span class="fStory">
+                            <p id="storyAuthor1"></p>
+                            <p id="storyDesc1"></p>
+                            <p id="storyData1"></p>
+                        </span>
+                    </a>
+                </div>
+                <div id="story2" class="storydiv">
+                    <a href="" id="StoryLink2" target="_blank">
+                        <span class="fStory">
+                            <p id="storyAuthor2"></p>
+                            <p id="storyDesc2"></p>
+                            <p id="storyData2"></p>
+                        </span>
+                    </a>
+                </div>
+                <div id="story3" class="storydiv">
+                    <a href="" id="StoryLink3" target="_blank">
+                        <span class="fStory">
+                            <p id="storyAuthor3"></p>
+                            <p id="storyDesc3"></p>
+                            <p id="storyData3"></p>
+                        </span>
+                    </a>
+                </div>
+                <div id="story4" class="storydiv">
+                    <a href="" id="StoryLink4" target="_blank">
+                        <span class="fStory">
+                            <p id="storyAuthor4"></p>
+                            <p id="storyDesc4"></p>
+                            <p id="storyData4"></p>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div id="nav">
+                <a href="javascript:showPrev()" onClick="stoprot()">&lt</a>
+                <span id="nav1">
+                    <a href="javascript:showStoryOne()" onClick="stoprot()">1</a>
+                       </span>
+                <span id="nav2">
+                        <a href="javascript:showStoryTwo()" onClick="stoprot()">2</a>
+                    </span>
+                <span id="nav3">
+                        <a href="javascript:showStoryThree()" onClick="stoprot()">3</a>
+                    </span>
+                <span id="nav4">
+                        <a href="javascript:showStoryFour()" onClick="stoprot()">4</a>
+                    </span>
+                <a href="javascript:showNext()" onClick="stoprot()">&gt</a>
+            </div>
+            <div id="chooseMain">
+                <!--////////////////////////////
+            Obmenni kursove na valuta ot ECB
+            /////////////////////////////-->
+                <div class="currency-box">
+                    <select id="currMon">
+                <option value="">Избери валута</option>
+                <option value="GBP">Британска лира<img src="" alt=""/></option>
+                <option value="USD">Щатски долар</option>
+                <option value="JPY">Японска йена</option>
+                <option value="EUR">Евро</option>
+                <option value="CZK">Чешката крона</option>
+                <option value="CHF">Швейцарски франк</option>
+                <option value="CAD">Канадски долар</option>
+            </select>
+                    <div id="chCourse">
+                    </div>
+                </div>
+                <!--////////
+            WEATHER MAIN
+            /////////-->
+                <div class="weather">
+                    <select id="cities">
+                    <option value="">Времето</option>
+                    <option value="Varna">Варна</option>
+                    <option value="Gabrovo">Габрово</option>
+                    <option value="Sliven">Сливен</option>
+                    <option value="Sofia">София</option>
+                    <option value="Pernik">Перник</option>
+                </select>
+                    <div id="weather">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--/////////////
+    SITE MAP MAIN
+    /////////////-->
+        <main id="siteCard">
+            <ul>
+                <li class="cardLi">
+                    <a href="">Начало</a>
+                </li>
+                <li class="cardLi">
+                    <a href="">България</a>
+                </li>
+                <li class="cardLi">
+                    <a href="">Бизнес</a>
+                </li>
+                <li class="cardLi">
+                    <a href="">Крими</a>
+                </li>
+                <li class="cardLi">
+                    <a href="">Свят</a>
+                </li>
+                <li class="cardLi">
+                    <a href="">Здраве</a>
+                </li>
+                <li class="cardLi">
+                    <a href="">Спорт</a>
+                </li>
+                <li class="cardLi">
+                    <a href="">Технологии</a>
+                </li>
+                <li class="cardLi">
+                    <a href="">Фото</a>
+                </li>
+                <li class="cardLi">
+                    <a href="">Видео</a>
+                </li>
+                <li class="cardLi">
+                    <a href="">Свободно време</a>
+                </li>
+                <li class="cardLi">
+                    <a href="">ТВ програма</a>
+                </li>
+            </ul>
+        </main>
+
+        <!--//////////////////
+    FOOTER STARTS HERE
+    //////////////////-->
+        <footer>
+            <section class="newsSites">
+                <article>
+                    <figure class="partnerNews">
+                        <a id="BBClink" href="" target="_blank" title="BBC News">
+                            <img id="BBCimage" src="assets/images/abcNews.jpg" alt="BBC News">
+                            <figcaption>
+                                <h1 id="BBCauthor"></h1>
+                                <h2 id="BBCtitle"></h2>
+                                <p id="BBCdata"></p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </article>
+                <article>
+                    <figure class="partnerNews">
+                        <a id="NGlink" href="" target="_blank" title="National-Geographic News">
+                            <img id="NGimage" src="assets/images/abcNews.jpg" alt="National-Geographic News">
+                            <figcaption>
+                                <h1 id="NGauthor"></h1>
+                                <h2 id="NGtitle"></h2>
+                                <p id="NGdata"></p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </article>
+                <article>
+                    <figure class="partnerNews">
+                        <a id="MTVlink" href="" target="_blank" title="MTV News">
+                            <img id="MTVimage" src="assets/images/abcNews.jpg" alt="MTV News">
+                            <figcaption>
+                                <h1 id="MTVauthor"></h1>
+                                <h2 id="MTVtitle"></h2>
+                                <p id="MTVdata"></p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </article>
+            </section>
+            <section class="newsSites">
+                <article>
+                    <figure class="partnerNews">
+                        <a id="NYTlink" href="" target="_blank" title="The New York Times News">
+                            <img id="NYTimage" src="assets/images/abcNews.jpg" alt="The New York Times News">
+                            <figcaption>
+                                <h1 id="NYTauthor"></h1>
+                                <h2 id="NYTtitle"></h2>
+                                <p id="NYTdata"></p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </article>
+                <article>
+                    <figure class="partnerNews">
+                        <a id="Glink" href="" target="_blank" title="Google News">
+                            <img id="Gimage" src="assets/images/abcNews.jpg" alt="Google News">
+                            <figcaption>
+                                <h1 id="Gauthor"></h1>
+                                <h2 id="Gtitle"></h2>
+                                <p id="Gdata"></p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </article>
+                <article>
+                    <figure class="partnerNews">
+                        <a id="NSlink" href="" target="_blank" title="New Scientist News">
+                            <img id="NSimage" src="assets/images/abcNews.jpg" alt="New Scientist News">
+                            <figcaption>
+                                <h1 id="NSauthor"></h1>
+                                <h2 id="NStitle"></h2>
+                                <p id="NSdata"></p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </article>
+            </section>
+
+            <section class="socialCanals">
+                <article>
+                    <figure class="social">
+                        <a href="https://www.facebook.com/Dnes.bg?fref=ts" target="_blank">
+                            <img src="assets/images/facebook.png" alt="Facebook">
+                            <figcaption>
+                                <p>Facebook</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </article>
+                <article>
+                    <figure class="social">
+                        <a href="https://twitter.com/?lang=bg" target="_blank">
+                            <img src="assets/images/twitter.png" alt="Twitter">
+                            <figcaption>
+                                <p>Twitter</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </article>
+                <article>
+                    <figure class="social">
+                        <a href="https://plus.google.com/collections/featured" target="_blank">
+                            <img src="assets/images/google-plus.png" alt="Google+">
+                            <figcaption>
+                                <p>Google+</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </article>
+
+            </section>
+
+            <section id="footerLinks">
+                <a id="ContactUSButton" href="">Контакти</a>
+                <a id="centerA" href="">Карта на сайта</a>
+                <a href="#top"><img src="assets/images/top.png" alt="Go on top"></a>
+            </section>
+
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="assets/js/newsAPIs.js"></script>
+    <script type="text/javascript" src="assets/js/carousel.js"></script>
+    <script type="text/javascript" src="assets/js/carouselAPIs.js"></script>
+    <script type="text/javascript" src="assets/js/footerButtons.js"></script>
+    <script type="text/javascript" src="assets/js/changeRateJs.js"></script>
+    <script type="text/javascript" src="assets/js/weatherJS.js"></script>
+    <script type="text/javascript" src="assets/js/controllerLogin.js"></script>
+    <script type="text/javascript" src="assets/js/serviceLogin.js"></script>
+</body>
+
+</html>

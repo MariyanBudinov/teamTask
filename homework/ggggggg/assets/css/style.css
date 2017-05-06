@@ -1,0 +1,55 @@
+@font-face {
+	font-family: Roboto;
+	src: url('../fonts/Roboto-Regular.ttf')
+}
+body {
+    font-size: 87.5%;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+#wrapper {
+    margin: 20px auto;
+    width: 200px;
+    height: auto;
+}
+input {
+    outline: none;
+    display: block;
+    border: 5px solid white; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 15px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 10px 0;
+}
+.printButton
+{
+padding: 10px 20px 11px !important;
+font-size: 21px !important;
+background-color: #F36C8C;
+font-weight: bold;
+text-shadow: 1px 1px #F36C8C;
+color: #ffffff;
+border-radius: 100px;
+-moz-border-radius: 100px;
+-webkit-border-radius: 100px;
+border: 1px solid #F36C8C;
+cursor: pointer;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+p {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px 20px 5px;
+  background: #BADA55;
+  font-weight: bold;
+  text-transform: uppercase;
+}

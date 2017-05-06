@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <button onclick="print()" class="printButton" value="Print">Print</button>
+        <div id="paragraph"></div>
+    </div>
+</body>
+<script>
+    function print() {
+        var inputs = document.getElementsByTagName('input');
+        for(var index = 0; index < inputs.length; index++) {
+            if(inputs[index].value != "") {
+                var paragraph = document.createElement('P');
+                var txt = document.createTextNode(inputs[index].value);
+                paragraph.appendChild(txt);
+                document.getElementById('paragraph').appendChild(paragraph);
+                inputs[index].value = "";
+            }
+        }
+    }
+</script>
+</html>

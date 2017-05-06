@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="input1" value="">
+        <input type="text" name="input2" value="">
+        <input type="text" name="input3" value="">
+        <input type="text" name="input4" value="">
+    </form>
+    <div id="inputTexts"></div>
+    <span onclick="showInputs()">Print</span>
+    <script>
+        function showInputs() {
+            inputs = document.getElementsByTagName('input');
+            for (index = 0; index < inputs.length; ++index) {
+                var divElement = document.createElement("P");
+                var divP = document.getElementsByTagName('input')[index].value;
+                divElement.innerHTML = divP;
+                document.getElementById("inputTexts").appendChild(divElement);
+            }
+        }
+    </script>
+</body>
+</html>
